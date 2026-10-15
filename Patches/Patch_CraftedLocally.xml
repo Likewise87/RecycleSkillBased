@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Only run if the mod that defines NoQuality_* is active -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Lomzie.ProducedLocallyFilter</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="RecycleApparel"]/ingredients/li/filter</xpath>
+          <value>
+            <specialFilters>
+              <li>ProducedLocally</li>
+              <li>NotProducedLocally</li>
+            </specialFilters>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>
+
+
+

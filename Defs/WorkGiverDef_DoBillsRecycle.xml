@@ -1,0 +1,19 @@
+<!-- Defs/WorkGiverDef_Recycle.xml -->
+<Defs>
+  <WorkGiverDef>
+    <defName>DoBillsRecycle</defName>
+    <label>recycle items</label>
+    <giverClass>RecycleSkillBased.WorkGiver_RecycleDoBill</giverClass>
+    <workType>Tailoring</workType>
+    <priorityInType>999</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+    </fixedBillGiverDefs>
+    <verb>recycle</verb>
+    <gerund>recycling at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+</Defs>

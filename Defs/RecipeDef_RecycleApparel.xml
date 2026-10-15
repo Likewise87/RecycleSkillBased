@@ -1,0 +1,35 @@
+<!-- Defs/RecipeDef_Recycle.xml -->
+<Defs>
+  <RecipeDef>
+    <defName>RecycleApparel</defName>
+    <label>recycle weapon or apparel</label>
+    <description>Disassemble an apparel or weapon to recover some of its materials.</description>
+    <jobString>Recycling.</jobString>
+    <workAmount>1600</workAmount>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Apparel</li>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Apparel</li>
+        <li>Weapons</li>
+      </categories>
+    </fixedIngredientFilter>
+    <requiredGiverWorkType>Tailoring</requiredGiverWorkType>
+    <recipeUsers>
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>
